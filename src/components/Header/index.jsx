@@ -6,8 +6,8 @@ function Header() {
         <header>
             <img src={logo} alt='Logo Kasa'></img>
             <nav>
-                <Link to="http://localhost:5174/">Accueil</Link>
-                <Link to="http://localhost:5174/a-propos">A Propos</Link>
+                <Link to="/">Accueil</Link>
+                <Link to="/a-propos">A Propos</Link>
             </nav>
         </header>
     )

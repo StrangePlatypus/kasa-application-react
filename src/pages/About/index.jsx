@@ -1,8 +1,14 @@
+import Banner from "../../components/Banner"
+import aboutBanner from '../../assets/pictures/about-banner.png'
+
 function About() {
     return (
-    <div>
-        <h1>A Propos</h1>
-    </div>
+    <main>
+        <Banner 
+            image = {aboutBanner}
+            alt = "Paysage montagneux et forestier"
+        />
+    </main>
     )
 }
 

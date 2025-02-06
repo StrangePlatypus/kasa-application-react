@@ -1,0 +1,30 @@
+
+
+.main-error{
+    --coral-red: #FF6060;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin: auto;
+
+    h1{
+        color: var(--coral-red);
+        font-size: 250px;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    p{
+        color: var(--coral-red);
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    a{
+        color: black;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+}

@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom/client'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
-import './assets/styles/index.css'
+import Error from './components/Error'
+import './assets/styles/index.scss'
 
 import Home from './pages/Home'
 import About from './pages/About'
-import Error from './components/Error'
 import HousingSheet from './pages/HousingSheet'
 
 ReactDOM.createRoot(document.getElementById("root")).render(

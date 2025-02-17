@@ -1,6 +1,5 @@
 import Banner from '../../components/Banner'
-import { housingsList } from '../../datas/Housings'
-import HousingItem from '../../components/Card'
+import Gallery from '../../components/Gallery'
 import homeBanner from '../../assets/pictures/home-banner.png'
 
 function Home() {
@@ -11,16 +10,9 @@ function Home() {
             image = {homeBanner}
             text = "Chez vous, partout et ailleurs"
             alt = "Falaises en bord de mer"
+            opacity = "40%"
         />
-        <ul className='housingGallery'>
-            {housingsList.map(({id, title, cover}) =>
-            <div key={id}>
-                <HousingItem 
-                    title = {title}
-                    cover = {cover}
-                />
-            </div>)}
-        </ul>
+        <Gallery />
     </main>
     )
 }

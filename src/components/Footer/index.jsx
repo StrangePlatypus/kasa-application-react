@@ -1,4 +1,5 @@
 import logo from '../../assets/pictures/white-logo.png'
+import '../../assets/styles/footer.scss'
 
 function Footer () {
     return(

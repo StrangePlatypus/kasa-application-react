@@ -1,0 +1,40 @@
+.housingGallery {
+  list-style-type: none;
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 60px;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+  background: #f6f6f6;
+  border-radius: 25px;
+}
+.housingGallery a {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+.housingGallery a img {
+  width: 340px;
+  height: 340px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+.housingGallery a div {
+  width: 340px;
+  height: 340px;
+  border-radius: 10px;
+  position: absolute;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(10, 10, 10, 0) 42%, rgba(0, 0, 0, 0.7) 100%);
+}
+.housingGallery a span {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+}/*# sourceMappingURL=gallery.css.map */

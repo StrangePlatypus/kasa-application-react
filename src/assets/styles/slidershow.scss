@@ -1,0 +1,65 @@
+.carrousel {
+    height: 420px;
+    margin: 25px 0 15px;
+    background-position: 50%;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    .arrow {
+        position: absolute;
+
+        &-left {
+            left: 10px;
+        }
+
+        &-right {
+            right: 10px;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    p {
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 18px;
+        color: white;
+        bottom: 2%;
+        position: absolute;
+    }
+
+    .slider-image {
+        border-radius: inherit;
+        height: inherit;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .carrousel {
+        height: 300px;
+
+        .arrow {
+            height: 40px;
+
+            &-left {
+                left: 5px;
+            }
+
+            &-right {
+                right: 5px;
+            }
+        }
+
+        p {
+            display: none;
+        }
+    }
+}

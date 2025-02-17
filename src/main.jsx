@@ -1,10 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import Header from './components/Header'
 import Footer from './components/Footer'
-import Error from './components/Error'
-import './assets/styles/index.scss'
+import Error from './pages/Error'
+import Header from './components/Header'
+import './assets/styles/main.scss'
+import './assets/styles/collapse.scss'
 
 import Home from './pages/Home'
 import About from './pages/About'
@@ -17,7 +18,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/a-propos" element={<About />} />
-        <Route path='/fiche-logement' element={<HousingSheet />} />
+        <Route path='/fiche-logement/:id' element={<HousingSheet />} />
         <Route path='*' element={<Error />} />
       </Routes>
       <Footer />

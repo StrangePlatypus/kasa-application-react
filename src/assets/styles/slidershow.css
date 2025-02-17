@@ -1,0 +1,47 @@
+.carrousel {
+  height: 420px;
+  margin: 25px 0 15px;
+  background-position: 50%;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.carrousel .arrow {
+  position: absolute;
+}
+.carrousel .arrow-left {
+  left: 10px;
+}
+.carrousel .arrow-right {
+  right: 10px;
+}
+.carrousel .arrow:hover {
+  cursor: pointer;
+}
+.carrousel p {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 18px;
+  color: white;
+  bottom: 2%;
+  position: absolute;
+}
+.carrousel .slider-image {
+  border-radius: inherit;
+  height: inherit;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  animation: fade 0.5s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=slidershow.css.map */

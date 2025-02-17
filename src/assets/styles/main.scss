@@ -1,0 +1,37 @@
+body {
+  background-color: #ffffff;
+  color: black;
+  font-family: 'Montserrat';
+  margin: 0;
+  min-height: 100vh;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  gap: 50px;
+  justify-content: space-between;
+}
+
+main {
+  max-width: 90%;
+  max-width: 1240px;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  margin: auto;
+}
+
+@media (max-width: 1024px) {
+  #root {
+    gap: 0;
+
+    main {
+      margin: 20px auto 20px auto;
+      max-width: 90%;
+      gap: 30px;
+      max-height: fit-content;
+    }
+  }
+}

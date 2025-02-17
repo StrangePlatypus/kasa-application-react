@@ -78,6 +78,14 @@ $margin-top-1 : 1% 0;
             .rating {
                 gap: 2%;
                 justify-content: flex-end;
+
+                .red {
+                    color: #FF6060;
+                }
+
+                .grey {
+                    color: #E3E3E3;
+                }
             }
         }
 

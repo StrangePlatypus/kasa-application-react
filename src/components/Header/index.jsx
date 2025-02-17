@@ -5,7 +5,7 @@ function Header() {
 
     return (
         <header>
-            <img src={logo} alt='Logo Kasa'></img>
+            <Link to="/"><img src={logo} alt='Logo Kasa'></img></Link>
             <nav>
                 <Link to="/" className={`link-home ${useLocation().pathname === "/" ? 'underlined' : ''}`}>Accueil</Link>
                 <Link to="/a-propos" className={`link-about ${useLocation().pathname === "/a-propos" ? 'underlined' : ''}`}>A Propos</Link>

@@ -1,6 +1,6 @@
 import Banner from "../../components/Banner"
 import aboutBanner from '../../assets/pictures/about-banner.png'
-import { aboutList } from "../../datas/aboutList"
+import {aboutList} from "../../datas/dataAbout.json"
 import Collapse from "../../components/Collapse"
 
 function About() {

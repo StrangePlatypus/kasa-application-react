@@ -9,7 +9,7 @@ import './assets/styles/collapse.scss'
 
 import Home from './pages/Home'
 import About from './pages/About'
-import HousingSheet from './pages/HousingSheet'
+import HousingSheet from './pages/Housing'
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>

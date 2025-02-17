@@ -1,7 +1,7 @@
 import { useNavigate, useParams } from 'react-router-dom'
 import '../../assets/styles/header.scss'
 import '../../assets/styles/housingSheet.scss'
-import housings from '../../datas/dataHousings.json'
+import {housings} from '../../datas/dataHousings.json'
 import HousingPresentation from '../../components/HousingPresentation'
 import { useEffect } from 'react'
 
@@ -10,7 +10,7 @@ function HousingSheet() {
     const {id} = useParams()
     const navigate = useNavigate()
 
-    const idExist = housings.housings.some(element => {
+    const idExist = housings.some(element => {
         if (element.id === id){
             return true
         } else {
@@ -25,7 +25,7 @@ function HousingSheet() {
             return (
                 <div>
                     <main className='housingSheet' id={id}>
-                        {housings.housings
+                        {housings
                             .filter((item) => {
                                 return (
                                     item.id === id   

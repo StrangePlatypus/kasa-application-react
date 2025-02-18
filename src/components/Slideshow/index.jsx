@@ -10,6 +10,7 @@ function Slideshow({pictures}){
     // Carrousel
     const [index, setIndex] = useState(0)
 
+    // If the left icon is clicked, we get to pictures[i - 1] item of the list. If we were on the first picture of the list, we go to the last one
     const decreaseIndex = () => {
         if (index === 0){
             setIndex(() => pictures.length -1 )
@@ -18,6 +19,7 @@ function Slideshow({pictures}){
         }
     }
 
+    // If the right icon is clicked, we get to pictures[i + 1] item of the list. If we were on the last picture of the list, we go to the first one
     const increaseIndex = () => {
         if (index === pictures.length - 1){
             setIndex(() =>  0)
@@ -27,6 +29,7 @@ function Slideshow({pictures}){
         }
     }
 
+    // If there is only one picture, we do not display the icons and numbers
     if(pictures.length === 1) {
         return (
             <div className="carrousel">

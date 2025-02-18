@@ -26,6 +26,14 @@
   }
 }
 
+// RESPONSIVE 
+
+@media (max-width: 1240px) {
+  .banner {
+    max-width: 100%;
+  }
+}
+
 @media (max-width: 1024px) {
   .banner {
     height: 200px;

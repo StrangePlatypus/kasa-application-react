@@ -1,7 +1,6 @@
 .carrousel {
     height: 420px;
     margin: 25px 0 15px;
-    background-position: 50%;
     border-radius: 25px;
     display: flex;
     align-items: center;
@@ -10,6 +9,7 @@
 
     .arrow {
         position: absolute;
+        filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.20));
 
         &-left {
             left: 10px;
@@ -21,16 +21,17 @@
 
         &:hover {
             cursor: pointer;
+            filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.40));
         }
     }
 
     p {
-        font-family: 'Montserrat';
         font-weight: 500;
         font-size: 18px;
         color: white;
         bottom: 2%;
         position: absolute;
+        filter: drop-shadow(0px 0px 7px rgba(0, 0, 0, 0.60));
     }
 
     .slider-image {
@@ -41,6 +42,21 @@
     }
 }
 
+@media (max-width: 1240px) {
+    .carrousel {
+        .arrow {
+            height: 80px;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .carrousel {
+        .arrow {
+            height: 60px;
+        }
+    }
+}
 
 @media (max-width: 768px) {
     .carrousel {

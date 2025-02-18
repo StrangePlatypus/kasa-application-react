@@ -5,7 +5,7 @@ $margin-top-1 : 1% 0;
     display: flex;
 }
 
-.housing-card {
+.housing-presentation {
     margin-top: 25px;
     font-weight: 500;
 
@@ -14,6 +14,7 @@ $margin-top-1 : 1% 0;
         flex-direction: row;
         justify-content: space-between;
 
+        // FIRST SECTION WITH HOUSING TITLE, LOCATION AND TAGS
         .infos {
             width: 70%;
 
@@ -42,6 +43,7 @@ $margin-top-1 : 1% 0;
             }
         }
 
+        // SECOND SECTION WITH HOST INFORMATIONS AND RATING
         .host-rate {
             width: 30%;
             margin: $margin-top-1;
@@ -89,6 +91,7 @@ $margin-top-1 : 1% 0;
             }
         }
 
+        // COLLAPSE ELEMENTS
         .collapse-title {
             font-size: 1.2rem;
             padding: 15px 20px 15px 15px;
@@ -96,13 +99,11 @@ $margin-top-1 : 1% 0;
 
         .collapsible-content {
             line-height: 150%;
+
+            .equipment-item {
+                margin: 0;
+            }
         }
-
-        .equipment-item {
-            margin: 0;
-        }
-
-
     }
 
     .col-2 {
@@ -110,13 +111,17 @@ $margin-top-1 : 1% 0;
     }
 }
 
+
+// RESPONSIVE
+
 @media (max-width: 768px) {
-    .housing-card {
+    .housing-presentation {
 
         .collapsibles,
         .housing-infos {
             flex-direction: column;
 
+            // FIRST SECTION
             .infos {
                 width: 100%;
                 margin: 0;
@@ -146,6 +151,7 @@ $margin-top-1 : 1% 0;
                 }
             }
 
+            // SECOND SECTION
             .host-rate {
                 width: 100%;
                 margin: 0;

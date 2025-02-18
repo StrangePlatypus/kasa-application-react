@@ -1,3 +1,4 @@
+// JUST FOR THE PAGE ABOUT
 .collapse-about {
     display: flex;
     flex-direction: column;
@@ -6,6 +7,7 @@
     overflow: hidden;
 }
 
+// COLLAPSE ITEM ITSELF
 .collapse-item {
     display: flex;
     flex-direction: column;
@@ -15,19 +17,18 @@
         background-color: #ff6060;
         color: white;
         border-radius: 5px;
-        max-width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
         padding: 10px 20px 10px 15px;
-        list-style: none;
         margin: 0;
         font-size: 1.5rem;
         font-weight: 700;
         margin: 0;
     }
 
+    // WHEN COLLAPSE CONTENT IS SHOWN
     .collapsible-content {
         background-color: #f6f6f6;
         margin: 0;
@@ -37,6 +38,7 @@
         transition: all 0.15s ease-out
     }
 
+    // WHEN COLLAPSE CONTENT IS HIDDEN
     .collapsed-content {
         padding: 0;
         margin: 0;
@@ -47,6 +49,8 @@
     }
 
 }
+
+// RESPONSIVE 
 
 @media (max-width: 768px) {
     .collapse-about {

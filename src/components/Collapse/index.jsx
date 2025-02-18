@@ -3,6 +3,7 @@ import '../../assets/styles/collapse.scss'
 
 function Collapse({title, content}){
     
+    // We verify if the icon is clicked on. If so, we change style of the collapse content and we rotate the icon.
     const [isOpen, setIsOpen] = useState(false)
     const handleCollapse = () => setIsOpen(!isOpen)
     const newStyle = isOpen ? "collapsible-content" : "collapsed-content"

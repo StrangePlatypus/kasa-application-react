@@ -7,7 +7,7 @@ function Card ({title, cover, id}){
         <li className='housing-card'>
             <Link to={`/fiche-logement/${id}`}>
                 <img src={cover} alt={`${title} cover`}/>
-                <div><span>{title}</span></div>
+                <div className='overlay'><span>{title}</span></div>
                 
             </Link>
         <Outlet />

@@ -13,6 +13,7 @@ function About() {
             opacity = "70%"
         />
         <div className="collapse-about">
+            {/* We run through aboutList from the data file and get the title and component of every item to create each collapse element */}
             {aboutList.map(({title, content}) =>
             <div key={title}>
                 <Collapse 

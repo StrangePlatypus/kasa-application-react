@@ -56,6 +56,7 @@ $margin-top-1 : 1% 0;
                 align-items: center;
                 margin: $margin-top-1;
                 max-height: 64px;
+                gap: 2%;
 
                 .host-name {
                     flex-direction: column;
@@ -160,6 +161,7 @@ $margin-top-1 : 1% 0;
                 .host {
                     justify-content: flex-end;
                     width: 50%;
+                    gap: 5%;
 
                     .host-name {
                         flex-direction: column;

@@ -28,22 +28,26 @@ body {
 // RESPONSIVE
 
 @media (max-width: 1240px) {
-  #root {
-    main {
-      max-width: 90%;
+  body {
+    #root {
+      main {
+        max-width: 90%;
+      }
     }
   }
 }
 
 @media (max-width: 1024px) {
-  #root {
-    gap: 0;
+  body {
+    #root {
+      gap: 0px;
 
-    main {
-      margin: 20px auto 20px auto;
-      max-width: 90%;
-      gap: 30px;
-      max-height: fit-content;
+      main {
+        margin: 20px auto 20px auto;
+        max-width: 90%;
+        gap: 30px;
+        max-height: fit-content;
+      }
     }
   }
 }
